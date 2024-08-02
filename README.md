@@ -48,9 +48,3 @@ This web-based poker game includes the following features:
 1. **Start the Game:** Click the "Deal" button to begin.
 2. **View Cards:** Observe your hand and community cards as they are dealt.
 3. **Check Results:** View the result message and your updated balance.
-
-## Future Improvements
-
-- Enhance hand evaluation to include various poker hands.
-- Add additional features such as betting options and multiple rounds.
-- Improve user interface with animations and sound effects.
