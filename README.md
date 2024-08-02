@@ -1,6 +1,6 @@
 # In Progress Poker Game
 
-This project is a web-based poker game currently under development. The game provides a simple interface to play poker, dealing cards to the player and community, and managing the player's balance. You can view the current progress of the game [here](https://lenkalaznovska.github.io/In_progress_Game_Poker).
+This project is a web-based poker game currently under development. The game provides a simple interface to play poker, dealing cards to the player and community, and managing the player's balance. You can view the current progress of the game [here](https://lenkalaznovska.github.io/In_progress_Game_Poker/).
 
 ## Table of Contents
 
