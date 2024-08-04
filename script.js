@@ -64,7 +64,7 @@ function displayCard(card, containerClass) {
   cardImg.onerror = function () {
     this.src = "https://deckofcardsapi.com/static/img/blue_back.png";
   };
-  document.querySelector(`.${containerClass}`).appendChild(cardImg);
+  document.querySelector(.${containerClass}).appendChild(cardImg);
 }
 
 function evaluateHand(hand) {
@@ -74,7 +74,6 @@ function evaluateHand(hand) {
 }
 
 document.querySelector(".deal").addEventListener("click", dealCards);
-document.querySelector(".show-all-cards").addEventListener("click", displayAllCards);
 
 let deck = [];
 let playerHand = [];
@@ -88,7 +87,7 @@ function buildDeck() {
 
   for (let suit of suits) {
     for (let value of values) {
-      deck.push(`${value}-${suit}`);
+      deck.push(${value}-${suit});
     }
   }
 }
@@ -167,20 +166,42 @@ function dealCards() {
 function showMessage(message, type) {
   let resultsDiv = document.querySelector(".results");
   resultsDiv.innerText = message;
-  resultsDiv.className = `results ${type}`;
+  resultsDiv.className = results ${type};
   resultsDiv.style.display = "block";
-}
-
-function displayAllCards() {
-  const container = document.querySelector(".all-cards-container");
-  container.innerHTML = ""; // Clear previous cards if any
-
-  for (let card in cardImages) {
-    displayCard(card, "all-cards-container");
-  }
 }
 
 document.querySelector(".deal").addEventListener("click", function () {
   document.querySelector(".results").style.display = "none";
   dealCards();
-});
+});                      <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poker Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="dealer">
+        <h2>Community Cards</h2>
+        <div class="community-cards"></div>
+      </div>
+      <div class="player">
+        <h2>Your Hand</h2>
+        <div class="player-cards"></div>
+      </div>
+      <div class="account">
+        <h2>Account Balance: <span class="balance">1000</span> Chips</h2>
+      </div>
+      <div class="controls">
+        <button class="deal">Deal</button>
+      </div>
+      <div class="results">
+        <!-- Results will be shown here -->
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
