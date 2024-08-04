@@ -95,18 +95,3 @@ body {
 .results.lose {
   color: #dc3545;
 }
-
-.all-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.all-cards-container img {
-  width: 80px;
-  height: auto;
-  margin: 5px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
