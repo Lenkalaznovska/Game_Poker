@@ -74,6 +74,7 @@ function evaluateHand(hand) {
 }
 
 document.querySelector(".deal").addEventListener("click", dealCards);
+document.querySelector(".show-all-cards").addEventListener("click", displayAllCards);
 
 let deck = [];
 let playerHand = [];
@@ -168,6 +169,15 @@ function showMessage(message, type) {
   resultsDiv.innerText = message;
   resultsDiv.className = `results ${type}`;
   resultsDiv.style.display = "block";
+}
+
+function displayAllCards() {
+  const container = document.querySelector(".all-cards-container");
+  container.innerHTML = ""; // Clear previous cards if any
+
+  for (let card in cardImages) {
+    displayCard(card, "all-cards-container");
+  }
 }
 
 document.querySelector(".deal").addEventListener("click", function () {
